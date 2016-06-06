@@ -144,7 +144,6 @@ namespace CUETools.Processor
             gapsHandling = CUEStyle.GapsAppended;
 
             advanced = new CUEConfigAdvanced();
-
             language = Thread.CurrentThread.CurrentUICulture.Name;
 
             scripts = new Dictionary<string, CUEToolsScript>();

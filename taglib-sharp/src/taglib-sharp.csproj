@@ -12,7 +12,6 @@
     </ApplicationIcon>
     <AssemblyName>taglib-sharp</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <ReleaseVersion>2.0.4.0</ReleaseVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>

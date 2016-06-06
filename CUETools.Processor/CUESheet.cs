@@ -1719,7 +1719,7 @@ namespace CUETools.Processor
             }
 
             LoadAlbumArt(_tracks[0]._fileInfo ?? _fileInfo);
-            ResizeAlbumArt();
+            //ResizeAlbumArt();
             if (_config.embedAlbumArt || _config.CopyAlbumArt)
                 _albumArt.ForEach(t => _padding += _albumArt[0].Data.Count);
             if (_config.embedLog && _eacLog != null)
@@ -2630,6 +2630,7 @@ namespace CUETools.Processor
                 entry.OffsetSafeCRC = _arVerify.OffsetSafeCRC;
             }
 
+            return WriteReport();
             if (_action == CUEAction.Encode)
             {
                 uint tracksMatch = 0;

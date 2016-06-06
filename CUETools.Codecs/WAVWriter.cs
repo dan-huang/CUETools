@@ -183,8 +183,8 @@ namespace CUETools.Codecs
             if (buff.Length == 0)
                 return;
             buff.Prepare(this);
-            if (!_headersWritten)
-                WriteHeaders();
+            // if (!_headersWritten)
+            //    WriteHeaders();
             _IO.Write(buff.Bytes, 0, buff.ByteLength);
             _sampleLen += buff.Length;
         }

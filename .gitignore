@@ -1,0 +1,13 @@
+*.DS_Store
+*.xcuserdatad
+tonal-mac-cuetools/TestFiles/
+
+Tonal/Tonal/obj/
+Tonal/Tonal/bin/
+Tonal/Tonal.userprefs
+
+*/obj/
+Freedb/obj/
+taglib-sharp/src/obj/
+
+bin/

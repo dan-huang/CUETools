@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A34B55B-682D-49C6-96E0-9676BA1E2427}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Tonal</RootNamespace>
+    <AssemblyName>Tonal</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CUETools.cs" />
+    <Compile Include="Progress.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CUETools.Codecs\CUETools.Codecs.csproj">
+      <Project>{6458A13A-30EF-45A9-9D58-E5031B17BEE2}</Project>
+      <Name>CUETools.Codecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CUETools.CTDB\CUETools.CTDB.csproj">
+      <Project>{AA2A9A7E-45FB-4632-AD85-85B0E556F818}</Project>
+      <Name>CUETools.CTDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CUETools.Processor\CUETools.Processor.csproj">
+      <Project>{4911BD82-49EF-4858-8B51-5394F86739A4}</Project>
+      <Name>CUETools.Processor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
